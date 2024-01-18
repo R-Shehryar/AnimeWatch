@@ -107,24 +107,23 @@ header{
     background-size: 1500px 400px;
     opacity: 1;
 }
-
-img{
-    height: 250px;
-    width : 260px;
-    border: solid 5px;
-    transition: 0.2s;
-    display: block;
-}
-img:hover{
-    transform: scale(1.2);
+.box:hover{
+    transform: scale(1.0);
     z-index: 0.5;
 }
-div.box{
+.box{
+    display: flex;
+    flex-direction: column;
     float: left;
     margin-right: 0px;
     margin-left: 30px;
     width : 260px;
     height: 250px;
+    transition: 0.1s;
+}
+div img{
+    height: 85%;
+    width: 100%;
 }
 p.n{
     color :silver;
